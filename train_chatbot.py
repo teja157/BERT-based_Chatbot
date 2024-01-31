@@ -17,8 +17,10 @@ num_epochs = 50
 batch_size = 16
 
 # Prepare your training and validation datasets here
-train_loader = ...
-val_loader = ...
+train_loader = url(
+     "https://datasets-server.huggingface.co/rows?dataset=rajuptvs%2Fecommerce_products_clip&config=default&split=train&offset=0&length=100")
+val_loader = url(
+     "https://datasets-server.huggingface.co/rows?dataset=rajuptvs%2Fecommerce_products_clip&config=default&split=train&offset=0&length=100")
 
 # Define preprocess_inputs, preprocess_targets, accuracy, and evaluate_model functions here
 def preprocess_inputs(inputs):
